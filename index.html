@@ -36,10 +36,22 @@
            f.appendChild(i3);
            f.appendChild(i4);
            f.appendChild(i5);
-           document.removeChild("BUTTON");
+             institute=["iset","fseg","prepa"];
+           institute.forEach(inst => {
+            option = document.createElement('option');
+    option.value = inst;
+    option.innerHTML = inst;
+    select.appendChild(option);
+           });
+           
         }
+        function remove_btn(el) {
+  var element = el;
+  element.remove();
+}
+
      </script>
     <body>
-        <button onclick="CreateForm()">Contact Us</button>    
+        <button onclick="CreateForm(),remove_btn(this)">Contact Us</button>    
     </body>
 </html>
