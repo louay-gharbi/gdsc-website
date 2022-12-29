@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Form </title>
+    </head>
+    <script>
+        function CreateForm() {
+           var f = document.createElement("FORM");
+           document.body.appendChild(f);
+           var i1 = document.createElement("INPUT");
+           i1.setAttribute("type", "text");
+           i1.setAttribute("id", "fname");
+           i1.setAttribute("name", "fname");
+           i1.setAttribute("placeholder", "Your First Name here");
+           var i3 = document.createElement("INPUT");
+           i3.setAttribute("type", "email");
+           i3.setAttribute("id", "email");
+           i3.setAttribute("name", "email");
+           i3.setAttribute("placeholder", "Your Email Adress here");
+           var i2 = document.createElement("INPUT");
+           i2.setAttribute("type", "text");
+           i2.setAttribute("id", "lname");
+           i2.setAttribute("name", "lname");
+           i2.setAttribute("placeholder", "Your Last Name here");
+           var i5 = document.createElement("SELECT");
+           i5.setAttribute("id", "institution");
+           i5.setAttribute("name", "institution");
+           i5.setAttribute("placeholder", "Your Educational Institution here");
+           var i4 = document.createElement("TEXTAREA");
+           i4.setAttribute("cols", "40");
+           i4.setAttribute("rows", "10");
+           i4.setAttribute("id", "textarea");
+           i4.setAttribute("placeholder", "Feel Free :D");
+           f.appendChild(i1);
+           f.appendChild(i2);
+           f.appendChild(i3);
+           f.appendChild(i4);
+           f.appendChild(i5);
+           document.removeChild("BUTTON");
+        }
+     </script>
+    <body>
+        <button onclick="CreateForm()">Contact Us</button>    
+    </body>
+</html>
